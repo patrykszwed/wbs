@@ -1,0 +1,159 @@
+#container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#nav {
+  float: left;
+  background-color: lightgray;
+  width: 120px;
+  min-height: 620px;
+  padding: 10px;
+}
+#content {
+  float: left;
+  padding: 20px;
+  width: 800px;
+}
+#content-centered {
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 20px;
+  width: 1000px;
+}
+#footer {
+  clear: both;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.logo {
+  font-size: 44px;
+  font-weight: 700;
+  color: #ddd;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+#topnav {
+  background-color: #1c74b2;
+  text-align: center;
+}
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+  min-height: 38px;
+  line-height: 200%;
+}
+
+.menu > li {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-right: 1px dashed #0a2b42;
+}
+
+.menu > li:first-child {
+  border-left: 1px dashed #0a2b42;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #0a2b42;
+}
+body {
+  background-color: lightslategray;
+}
+
+.selected {
+  text-decoration: underline;
+}
+
+.examples {
+  width: 40%;
+  float: left;
+}
+
+.images {
+  width: 60%;
+  float: right;
+}
+
+img {
+  max-width: 140%;
+  margin-left: 15px;
+}
+
+.outer {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+}
+
+.inner {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.inner2 {
+  background-color: yellow;
+  width: 70px;
+  height: 70px;
+  float: right;
+}
+
+form.contactFormRow {
+  display: table;
+}
+
+div.contactFormRow {
+  display: table-row;
+}
+
+label,
+input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+label {
+  padding-right: 10px;
+}
+
+.formContainer {
+  margin-left: 7%;
+  margin-right: 10%;
+  padding: 20px;
+}
+
+input:invalid {
+  background-color: lightcoral;
+  transition: background-color 0.25s ease-in-out;
+}
+
+input:valid:not([type="submit"]) {
+  background-color: lightgreen;
+  transition: background-color 0.25s ease-in-out;
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+#selection {
+  display: table;
+}
