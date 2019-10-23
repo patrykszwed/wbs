@@ -179,3 +179,43 @@ dd {
   font-size: 200%;
   color: rgb(33, 59, 143);
 }
+
+div.examples>ol>li:nth-child(odd) {
+  color: rgb(187, 11, 119);
+}
+
+div.examples>ol>li:nth-child(even) {
+  color: rgb(72, 120, 209);
+}
+
+dl>* {
+  font-style: italic;
+}
+
+h3+p {
+  color: rgb(5, 161, 201);
+}
+
+dd~dt {
+  color: rgb(5, 161, 201);
+}
+
+img[src*="tags"] {
+  opacity: 0.5;
+  transition: transform .5s;
+}
+
+img[src*="tags"]:hover {
+  transform: scale(1.1);
+  opacity: 1.0;
+}
+
+a[href^="index"] {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
