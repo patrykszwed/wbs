@@ -235,9 +235,11 @@ a[href^="index"] {
   font-weight: bold;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   body {
-    background-color: red;
+    background-image: url("https://www.mining.com/wp-content/uploads/2018/08/unnamed.jpg");
+    background-repeat: repeat;
+    background-size: 50%;
   }
 }
 
