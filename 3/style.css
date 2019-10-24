@@ -105,6 +105,7 @@ img {
   background-color: blue;
   width: 200px;
   height: 200px;
+  border: 2px solid black;
 }
 
 .inner {
@@ -112,6 +113,7 @@ img {
   width: 50px;
   height: 50px;
   margin: 5px;
+  border: 4px dotted green;
 }
 
 .inner2 {
@@ -119,6 +121,8 @@ img {
   width: 70px;
   height: 70px;
   float: right;
+  border: 3px dashed red;
+  border-radius: 15px;
 }
 
 form.contactFormRow {
@@ -155,11 +159,28 @@ input:valid:not([type="submit"]) {
   transition: background-color 0.25s ease-in-out;
 }
 
+table {
+  overflow-x: auto;
+}
+
 table,
 tr,
 td {
   border-collapse: collapse;
   border: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: lightblue;
+}
+
+tr:nth-child(odd) {
+  background-color: lightcoral;
+}
+
+th {
+  background-color: lightseagreen;
+  text-align: center;
 }
 
 #selection {
@@ -218,4 +239,8 @@ a[href^="index"] {
   body {
     background-color: red;
   }
+}
+
+.novisible {
+  visibility: hidden;
 }
