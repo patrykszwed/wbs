@@ -7,6 +7,7 @@
   <meta name="description" content="Improve your HTML5 skills" />
   <meta name="keywords" content="html, tutorials, tutorial, html5, study, labs, seo, divs, tables, tags" />
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="main.js"></script>
 </head>
 
 <body>
@@ -30,21 +31,49 @@
       <div id="content">
         <h2 class="pageHeader">Basic definitions</h2>
         <dl>
-          <dt>HTML</dt>
-          <dd>
+          <dt id="changable">HTML</dt>
+          <dd class="changable">
             Hypertext Markup Language, a standardized system for tagging text
             files to achieve font, colour, graphic, and hyperlink effects on
             World Wide Web pages.
           </dd>
           <dt>CSS</dt>
-          <dd>
+          <dd class="changable">
             CSS. Stands for "Cascading Style Sheet." Cascading style sheets
             are used to format the layout of Web pages.
+          </dd>
+          <dt>JavaScript</dt>
+          <dd>
+            <div>
+                <button onclick="changeHTML()">Change HTML</button>
+                <button onclick="spamConsole()">Console logging</button>
+                <button onclick="descInit()">1. String desc.</button>
+                <button onclick="changeClassInit()">2. Change by class</button>
+                <button onclick="multiplyInit()">3. Multiply</button>
+                <button onclick="changeTableInit()">4. Change table</button>
+                <button onclick="promptInit()">5. Prompt</button>
+            </div>
+            <div>
+              <input type="number" id="field1" />
+              <input type="number" id="field2" />
+            </div>
+            <div>
+              Script output: <textarea type="text" id="scriptOutput" readonly></textarea>
+            </div>
+            <div>
+              <table id="tableScript"> 
+                <th colspan="2">Header now</th>
+                <tr>
+                  <td>Some values</td>
+                </td>
+                <td>Some values</td>
+                </tr>
+              </table>
+            </div>
           </dd>
         </dl>
       </div>
     </main>
-
     <footer>
       <div id="footer">
         This is our footer.
