@@ -21,7 +21,13 @@
         <li><a href="tables.html">Tables</a></li>
         <li><a href="divs.html">Divs</a></li>
         <li><a href="seo.html">SEO</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown">
+          <button class="dropbtn">General</button>
+          <div class="dropdown-content">
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
@@ -45,13 +51,13 @@
           <dt>JavaScript</dt>
           <dd>
             <div>
-                <button onclick="changeHTML()">Change HTML</button>
-                <button onclick="spamConsole()">Console logging</button>
-                <button onclick="descInit()">1. String desc.</button>
-                <button onclick="changeClassInit()">2. Change by class</button>
-                <button onclick="multiplyInit()">3. Multiply</button>
-                <button onclick="changeTableInit()">4. Change table</button>
-                <button onclick="promptInit()">5. Prompt</button>
+              <button onclick="changeHTML()">Change HTML</button>
+              <button onclick="spamConsole()">Console logging</button>
+              <button onclick="descInit()">1. String desc.</button>
+              <button onclick="changeClassInit()">2. Change by class</button>
+              <button onclick="multiplyInit()">3. Multiply</button>
+              <button onclick="changeTableInit()">4. Change table</button>
+              <button onclick="promptInit()">5. Prompt</button>
             </div>
             <div>
               <input type="number" id="field1" />
@@ -61,12 +67,12 @@
               Script output: <textarea type="text" id="scriptOutput" readonly></textarea>
             </div>
             <div>
-              <table id="tableScript"> 
+              <table id="tableScript">
                 <th colspan="2">Header now</th>
                 <tr>
                   <td>Some values</td>
-                </td>
-                <td>Some values</td>
+                  </td>
+                  <td>Some values</td>
                 </tr>
               </table>
             </div>
