@@ -27,7 +27,7 @@
 
 #footer {
   clear: both;
-  background-color: black;
+  background-image: linear-gradient(to top, gray, black);
   color: white;
   text-align: center;
   padding: 20px;
@@ -79,7 +79,11 @@
 }
 
 body {
-  background-color: lightslategray;
+  background-image: radial-gradient(
+    lightslategray,
+    rgb(104, 95, 95),
+    rgb(75, 72, 72)
+  );
 }
 
 .selected {
