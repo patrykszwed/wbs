@@ -36,7 +36,7 @@
 .logo {
   font-size: 44px;
   font-weight: 700;
-  color: #ddd;
+  color: rgba(226, 219, 245, 0.66);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -58,14 +58,14 @@
   line-height: 200%;
 }
 
-.menu>li {
+.menu > li {
   display: inline-block;
   padding-left: 20px;
   padding-right: 20px;
   border-right: 1px dashed #0a2b42;
 }
 
-.menu>li:first-child {
+.menu > li:first-child {
   border-left: 1px dashed #0a2b42;
 }
 
@@ -202,34 +202,34 @@ dd {
   color: rgb(33, 59, 143);
 }
 
-div.examples>ol>li:nth-child(odd) {
+div.examples > ol > li:nth-child(odd) {
   color: rgb(187, 11, 119);
 }
 
-div.examples>ol>li:nth-child(even) {
+div.examples > ol > li:nth-child(even) {
   color: rgb(72, 120, 209);
 }
 
-dl>* {
+dl > * {
   font-style: italic;
 }
 
-h3+p {
+h3 + p {
   color: rgb(5, 161, 201);
 }
 
-dd~dt {
+dd ~ dt {
   color: rgb(5, 161, 201);
 }
 
 img[src*="tags"] {
   opacity: 0.5;
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
 img[src*="tags"]:hover {
   transform: scale(1.1);
-  opacity: 1.0;
+  opacity: 1;
 }
 
 a[href^="index"] {
@@ -253,7 +253,7 @@ a[href^="index"] {
   font-size: 18px;
   border: none;
   line-height: 200%;
-  min-height: 38px
+  min-height: 38px;
 }
 
 .dropdown {
@@ -287,4 +287,14 @@ a[href^="index"] {
 
 .dropdown:hover .dropbtn {
   background-color: #1c74b2;
+}
+
+.shadowedText {
+  text-shadow: 2px 2px hsla(300, 73%, 59%, 0.75);
+}
+
+.faqDiv {
+  border: 1px solid #1c74b2;
+  box-shadow: 3px 3px black;
+  display: inline-block;
 }
