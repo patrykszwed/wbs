@@ -48,17 +48,10 @@
                     <h3 class="pageHeaderSmaller">Components</h3>
                     <ul>
                         <li>Badges <span class="badge badge-success">Badge</span></li>
-                        <li>Dropdowns
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dropdown button
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
+                        <li>Progress
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </li>
                         <li>Lists
@@ -84,7 +77,39 @@
                     </ul>
                 </div>
                 <div class="col">
-                    <h3 class="pageHeaderSmaller">TEST2</h3>
+                    <h3 class="pageHeaderSmaller">Forms</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Customer ID</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect2">Another selection</label>
+                            <select multiple class="form-control" id="exampleFormControlSelect2">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Feedback</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
                 <div class="col">
                     <h3 class="pageHeaderSmaller">
@@ -92,7 +117,7 @@
                             <h1 class="display-4">Do you want more?</h1>
                             <p class="lead">You can purchase a special course!</p>
                             <hr class="my-4">
-                            <p>50% off only today!</p>
+                            <p>50% off, only today!</p>
                             <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
                         </div>
                     </h3>

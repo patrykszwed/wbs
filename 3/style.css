@@ -304,23 +304,6 @@ a[href^="index"] {
   display: inline-block;
 }
 
-a.dropdown-toggle:focus {
-  pointer-events: none;
-}
-
-a.dropdown-toggle:focus+.bootstrapDropdown {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.dropdown-menu {
-  opacity: 0;
-  display: block;
-  visibility: hidden;
-  transition: visibility 0.5s;
-}
-
 .navClass {
   background-image: linear-gradient(to right, #007bff, #0051ff, #001aff);
   border-radius: 5px;
