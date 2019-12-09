@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Form</h1>
+<form action="#" th:action="@{/addUser}" th:object="${user}" method="post">
+    <table>
+        <tr>
+            <td><p>Name: <input type="text" th:field="*{name}" /></p></td>
+            <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</td>
+        </tr>
+        <tr>
+            <td><p>Surname: <input type="text" th:field="*{surname}" /></p></td>
+            <td th:if="${#fields.hasErrors('surname')}" th:errors="*{surname}">Surname Error</td>
+        </tr>
+        <tr>
+            <td><p>Age: <input type="text" th:field="*{age}" /></p></td>
+            <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</td>
+        </tr>
+        <tr>
+            <td><p>Email: <input type="text" th:field="*{email}" /></p></td>
+            <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</td>
+        </tr>
+        <tr>
+            <td><p>Remarks: <input type="text" th:field="*{remarks}" /></p></td>
+        </tr>
+        <tr>
+            <td><p><button type="submit">Submit</button> <button type="reset">Reset</button></p></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

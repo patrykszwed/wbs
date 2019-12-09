@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Form</h1>
+<form action="#" th:action="@{/calculator}" th:object="${calculator}" method="post">
+    <table>
+        <tr>
+            <td><p>First: <input type="text" th:field="*{first}" /></p></td>
+        </tr>
+        <tr>
+            <td><p>Second: <input type="text" th:field="*{second}" /></p></td>
+        </tr>
+        <tr>
+            <td><p>Third: <input type="text" th:field="*{third}" /></p></td>
+        </tr>
+        <tr>
+            <td><p>Forth: <input type="text" th:field="*{forth}" /></p></td>
+        </tr>
+        <tr>
+            <td><p>Fifth: <input type="text" th:field="*{fifth}" /></p></td>
+        </tr>
+        <tr>
+            <td><p><button type="submit">Sum</button> <button type="reset">Reset</button></p></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
